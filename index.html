@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic8Ball</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="magic8ball.css">
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+
+<header>
+	<h1 class="header">Magic <span style="font-size: 60px; color:darkolivegreen;">8</span> Ball</h1>
+</header>
+
+<div class="showquestionbutton">
+  <a href="magic8ballquestion.html"> <button id="showquestion" onclick=" return showquestion();" style="display: none;" ><B>SHOW ME QUESTIONS</B></button>
+  </a>
+</div>
+
+<div class="questiondiv">
+   <div id="question">
+    <div>
+	    <p id="q1"></p>
+	     <p id="answer"></p>
+	    <button class="box2" onclick="nextquestion()"><b>NEXT</b></button>
+	    <button class="box2" onclick="showanswer()"><b>ANSWER</b></button>
+	   
+	</div>
+
+
+   </div>
+</div>
+</body>
+<script src="magic8ball.js"></script>
+</html>
